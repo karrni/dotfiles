@@ -5,11 +5,17 @@ export PATH=$PATH:$LOCALBIN:$GOPATH/bin
 
 export EDITOR='vim'
 
+## completion
 autoload -Uz compinit && compinit
 
+## reverse search
+bindkey -v
+bindkey '^R' history-incremental-search-backward
+
+## aliases
 alias ll="ls -lah --color=auto"
 
-## Load ~/.aliases if it exists
+## load ~/.aliases if it exists
 [[ -f ~/.aliases ]] && source ~/.aliases
 
 

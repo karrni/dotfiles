@@ -1,8 +1,9 @@
 # General
 export GOPATH=$HOME/go
+export CARGOBIN=$HOME/.cargo/bin
 export LOCALBIN=$HOME/.local/bin
 export POETRYBIN=$HOME/.poetry/bin
-export PATH=$PATH:$LOCALBIN:$POETRYBIN:$GOPATH/bin
+export PATH=$PATH:$LOCALBIN:$POETRYBIN:$CARGOBIN:$GOPATH/bin
 
 export EDITOR='vim'
 

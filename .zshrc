@@ -1,8 +1,10 @@
 # General
 export GOPATH=$HOME/go
-export CARGOBIN=$HOME/.cargo/bin
+
 export LOCALBIN=$HOME/.local/bin
 export POETRYBIN=$HOME/.poetry/bin
+export CARGOBIN=$HOME/.cargo/bin
+
 export PATH=$PATH:$LOCALBIN:$POETRYBIN:$CARGOBIN:$GOPATH/bin
 
 export EDITOR='vim'
@@ -19,6 +21,7 @@ alias ll="ls -lah --color=auto"
 
 ## load ~/.aliases if it exists
 [[ -f ~/.aliases ]] && source ~/.aliases
+[[ -f ~/.profile ]] && source ~/.profile
 
 
 # Prompt
